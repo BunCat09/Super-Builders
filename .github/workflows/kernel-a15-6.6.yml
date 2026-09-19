@@ -17,7 +17,7 @@ on:
           - ReSukiSU
           - WKSU
           # - RKSU  # no SUSFS integration — deferred
-        default: "SukiSU"
+        default: "KernelSU-Next"
       add_susfs:
         description: "Add Enhanced SUSFS"
         type: boolean
@@ -52,7 +52,7 @@ on:
         options:
           - generic
           - lake
-        default: "lake"
+        default: "generic"
   workflow_call:
     inputs:
       ksu_variant:
